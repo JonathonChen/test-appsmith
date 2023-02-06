@@ -45,21 +45,6 @@
                   "key": "primaryColumns.task.computedValue"
                 },
                 {
-                  "key": "primaryColumns.status.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.action.borderRadius"
-                },
-                {
-                  "key": "primaryColumns.action.boxShadow"
-                },
-                {
                   "key": "accentColor"
                 },
                 {
@@ -111,9 +96,7 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "step",
-                "task",
-                "status",
-                "action"
+                "task"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -127,11 +110,7 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 18.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "primaryColumns.action.onClick"
-                }
-              ],
+              "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
                 "step": {
@@ -177,54 +156,6 @@
                   "validation": {},
                   "labelColor": "#FFFFFF",
                   "isEditable": false
-                },
-                "status": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "status",
-                  "originalId": "status",
-                  "alias": "status",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isCellVisible": true,
-                  "isCellEditable": false,
-                  "isDerived": false,
-                  "label": "status",
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                  "validation": {},
-                  "labelColor": "#FFFFFF",
-                  "isEditable": false
-                },
-                "action": {
-                  "index": 3,
-                  "width": 150,
-                  "id": "action",
-                  "originalId": "action",
-                  "alias": "action",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "button",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isCellVisible": true,
-                  "isCellEditable": false,
-                  "isDisabled": false,
-                  "isDerived": false,
-                  "label": "action",
-                  "onClick": "{{copyToClipboard()}}",
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                  "validation": {},
-                  "labelColor": "#FFFFFF",
-                  "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
                 }
               },
               "key": "gscl6wxsak",
@@ -232,7 +163,7 @@
               "rightColumn": 44,
               "textSize": "0.875rem",
               "widgetId": "vmad43ubj7",
-              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"status\": \"✅\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"status\": \"--\",\n    \"action\": \"\"\n  }\n]",
+              "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\"\n  }\n]",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
